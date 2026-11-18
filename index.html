@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AthleteScope — спортивная аналитика со смартфона</title>
+  <meta name="description" content="AthleteScope — концепция приложения, которое превращает смартфон в инструмент спортивного тестирования: прыжки, спринт, сила, выносливость и прогресс спортсменов в одном месте.">
+  <meta name="theme-color" content="#080d12">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="AthleteScope — спортивная аналитика со смартфона">
+  <meta property="og:description" content="Тестируй спортсменов, анализируй результаты и отслеживай прогресс — с помощью одного приложения.">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/TildaSans-VF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero.jpg" as="image">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/form.js" defer></script>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AthleteScope — на главную">Athlete<span>Scope</span></a>
+    <nav class="site-nav" aria-label="Навигация">
+      <a href="#tests">Тесты</a>
+      <a href="#how">Как работает</a>
+      <a href="#for-coaches">Тренерам</a>
+    </nav>
+    <a class="button" href="#pilot">В пилотное тестирование ↗</a>
+  </header>
+
+  <main>
+
+    <!-- Первый экран -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Спортивная аналитика нового поколения</p>
+          <h1 class="hero__title" id="hero-title">Преврати смартфон в инструмент спортивной аналитики</h1>
+          <p class="hero__lead">Тестируй спортсменов, анализируй результаты и отслеживай прогресс — с помощью одного приложения.</p>
+          <a class="button" href="#pilot">Записаться на пилотное тестирование <span aria-hidden="true">↗</span></a>
+          <p class="hero__note">AthleteScope находится в разработке</p>
+        </div>
+
+        <div class="phone" role="img" aria-label="Концепт экрана анализа прыжка: высота 42 см, тест CMJ, 3 попытки, изменение +5.2%">
+          <div class="phone__screen" aria-hidden="true">
+            <div class="phone__top"><span>ATHLETESCOPE</span><span>● ● ●</span></div>
+            <div class="phone__title">Высота прыжка</div>
+            <div class="phone__metric">42 <small>см · концепт</small></div>
+            <div class="phone__chart">
+              <svg viewBox="0 0 180 80" preserveAspectRatio="none">
+                <polyline points="0,66 25,58 48,61 73,35 98,44 122,19 145,28 180,8" fill="none" stroke="#42e69b" stroke-width="3"/>
+                <circle cx="122" cy="19" r="4" fill="#42e69b"/>
+              </svg>
+            </div>
+            <div class="phone__row"><span>Тест</span><b>CMJ</b></div>
+            <div class="phone__row"><span>Попытки</span><b>3</b></div>
+            <div class="phone__row"><span>Изменение</span><b class="is-positive">+5.2%</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Больше, чем просто секундомер -->
+    <section class="section" aria-labelledby="more-title">
+      <div class="container story">
+        <div class="story__visual" role="img" aria-label="Тренировка спортсмена в зале">
+          <div class="story__tag">От ручных заметок <strong>к целостной картине</strong></div>
+        </div>
+        <div class="story__text">
+          <h2 class="heading" id="more-title">Больше, чем просто секундомер</h2>
+          <p>Тренер видит не отдельную цифру, а историю развития спортсмена. AthleteScope — концепция приложения, которая помогает проводить тестирование через смартфон и собирать результаты в удобную аналитику.</p>
+          <div class="story__points">
+            <div class="point">
+              <span class="point__mark" aria-hidden="true">↗</span>
+              <div>
+                <strong>Меньше ручных записей</strong>
+                <p>Результаты тестов и динамика — в цифровом профиле спортсмена.</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="point__mark" aria-hidden="true">⌁</span>
+              <div>
+                <strong>Контекст для решений</strong>
+                <p>Сопоставляй попытки, периоды и результаты группы в одном месте.</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="point__mark" aria-hidden="true">◎</span>
+              <div>
+                <strong>Технологии рядом</strong>
+                <p>Камера, компьютерное зрение и датчики смартфона — основа концепции тестирования.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Что можно тестировать -->
+    <section class="section section--alt" id="tests" aria-labelledby="tests-title">
+      <div class="container">
+        <h2 class="heading" id="tests-title">Что можно тестировать</h2>
+        <p class="intro">Основные качества для комплексного взгляда на физическую подготовку.</p>
+        <ul class="tests">
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">↟</span>
+            <span class="test__label">Мощность</span>
+            <h3 class="test__title">Прыжки SJ и CMJ</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">⟶</span>
+            <span class="test__label">Взрывная сила</span>
+            <h3 class="test__title">Прыжок в длину</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">»</span>
+            <span class="test__label">Скорость</span>
+            <h3 class="test__title">Спринт и ускорение</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">＋</span>
+            <span class="test__label">Сила</span>
+            <h3 class="test__title">Отжимания и подтягивания</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">◌</span>
+            <span class="test__label">Функциональная форма</span>
+            <h3 class="test__title">Выносливость</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">⌁</span>
+            <span class="test__label">Контроль тела</span>
+            <h3 class="test__title">Гибкость и баланс</h3>
+          </li>
+          <li class="test">
+            <span class="test__icon" aria-hidden="true">✳</span>
+            <span class="test__label">Моторика</span>
+            <h3 class="test__title">Реакция и координация</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Как работает -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="heading" id="how-title">От теста — к понятной динамике</h2>
+        <p class="intro">Простой сценарий, созданный вокруг тренировочного процесса.</p>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num" aria-hidden="true">01</div>
+            <h3>Подготовь тест</h3>
+            <p>Установи смартфон, выбери упражнение и следуй подсказкам приложения.</p>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">02</div>
+            <h3>Проведи тестирование</h3>
+            <p>Зафиксируй попытку спортсмена с помощью камеры и датчиков телефона.</p>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">03</div>
+            <h3>Изучи прогресс</h3>
+            <p>Сохрани результат и сравни его с личной историей и данными группы.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Весь прогресс под контролем -->
+    <section class="section section--alt" aria-labelledby="progress-title">
+      <div class="container dash">
+        <div class="dash__copy">
+          <h2 class="heading" id="progress-title">Весь прогресс под контролем</h2>
+          <p>Концепция интерфейса AthleteScope объединяет профиль спортсмена, историю тестирований и наглядную динамику в одной рабочей среде.</p>
+          <ul class="dash__list">
+            <li>Сравнение с собственными предыдущими результатами</li>
+            <li>Сопоставление с нормативами и группой</li>
+            <li>История тестов по датам и дисциплинам</li>
+          </ul>
+        </div>
+
+        <div class="app" role="img" aria-label="Концептуальная аналитическая панель спортсмена">
+          <div class="app__head">
+            <div class="app__person">
+              <div class="app__avatar">АС</div>
+              <div>
+                <strong>Профиль спортсмена</strong>
+                <small>Личный кабинет · концепт</small>
+              </div>
+            </div>
+            <span class="app__period">Последние 6 недель⌄</span>
+          </div>
+          <div class="app__grid">
+            <div class="app__card">
+              <h3>Высота CMJ</h3>
+              <div class="app__value">42 см <small>+5.2%</small></div>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="app__card">
+              <h3>Спринт · 20 м</h3>
+              <div class="app__value">3.18 <small>−0.08 с</small></div>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="app__history">
+            <div class="app__history-title">История тестирований</div>
+            <div class="app__history-line"><span>12 мая</span><span>Прыжок CMJ</span><strong>42 см</strong></div>
+            <div class="app__history-line"><span>08 мая</span><span>Спринт · 20 м</span><strong>3.18 с</strong></div>
+            <div class="app__history-line"><span>02 мая</span><span>Прыжок в длину</span><em>Концепт данных</em></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Создано для тренеров -->
+    <section class="section" id="for-coaches" aria-labelledby="coaches-title">
+      <div class="container">
+        <h2 class="heading" id="coaches-title">Создано для тренеров</h2>
+        <p class="intro">Инструмент, который помогает организовать тестирование — от индивидуальной работы до целой спортивной группы.</p>
+        <div class="benefits">
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">✳</span>
+            <div>
+              <strong>Разные тесты в одном месте</strong>
+              <p>Единая концепция для нескольких направлений физической подготовки.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">⌁</span>
+            <div>
+              <strong>Цифровая история спортсмена</strong>
+              <p>Результаты и наблюдения не теряются среди разрозненных записей.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">▤</span>
+            <div>
+              <strong>Отчёты для группы</strong>
+              <p>Удобнее увидеть общую картину и сравнить индивидуальный прогресс.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">↗</span>
+            <div>
+              <strong>Меньше ручной работы</strong>
+              <p>Больше времени на интерпретацию результатов и работу с командой.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">◉</span>
+            <div>
+              <strong>Смартфон как доступная основа</strong>
+              <p>Для части тестов концепция не предполагает дорогую измерительную систему.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit__mark" aria-hidden="true">◎</span>
+            <div>
+              <strong>Подходит разным форматам</strong>
+              <p>Частная практика, секция, спортивная школа или академия.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Заявка на пилот -->
+    <section class="cta" id="pilot" aria-labelledby="cta-title">
+      <div class="cta__grid">
+        <div class="cta__copy">
+          <p class="eyebrow">Присоединяйтесь к разработке</p>
+          <h2 class="cta__title" id="cta-title">Будущее спортивного тестирования начинается со смартфона</h2>
+          <p class="cta__lead">AthleteScope находится в разработке. Оставьте заявку, чтобы узнать о пилотном тестировании.</p>
+        </div>
+
+        <!--
+          Куда отправлять заявки — задаётся в data-endpoint.
+          Пусто — форма проверяет поля, но никуда не отправляет (см. README).
+        -->
+        <form class="form" id="pilot-form" data-endpoint="" novalidate>
+          <div class="form__field">
+            <label for="pilot-name">Имя</label>
+            <input id="pilot-name" name="name" type="text" placeholder="Как к вам обращаться?" autocomplete="name" required aria-describedby="pilot-name-error">
+            <div class="form__error" id="pilot-name-error" aria-live="polite"></div>
+          </div>
+          <div class="form__field">
+            <label for="pilot-contact">Email или телефон</label>
+            <input id="pilot-contact" name="contact" type="text" placeholder="name@example.com или +7…" autocomplete="email" required minlength="5" aria-describedby="pilot-contact-error">
+            <div class="form__error" id="pilot-contact-error" aria-live="polite"></div>
+          </div>
+          <div class="form__field">
+            <label for="pilot-org">Спортивная организация</label>
+            <input id="pilot-org" name="organization" type="text" placeholder="Клуб, секция, школа — если есть" autocomplete="organization">
+          </div>
+          <button class="form__submit" type="submit">Принять участие в пилоте ↗</button>
+          <div class="form__status" role="status" aria-live="polite"></div>
+          <p class="form__note">Отправляя заявку, вы выражаете интерес к участию в пилоте. AthleteScope пока разрабатывается.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top">Athlete<span>Scope</span></a>
+    <span>Концепция приложения для спортивного тестирования</span>
+    <span>© AthleteScope</span>
+  </footer>
+
+</body>
+</html>
